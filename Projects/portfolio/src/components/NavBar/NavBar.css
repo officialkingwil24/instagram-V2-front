@@ -1,0 +1,25 @@
+.NavBar{
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 3vw;
+    height: 100px;
+    width: 97vw;
+    background-color: goldenrod;
+    z-index: 1;
+}
+
+.NavBar img{
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100px;
+}
+
+.NavBar a{
+    margin-right: 20px;
+}
