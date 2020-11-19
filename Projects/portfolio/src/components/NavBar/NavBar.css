@@ -1,5 +1,5 @@
 .NavBar{
-    position: sticky;
+    position: fixed;
     top: 0;
 
     display: flex;
@@ -9,8 +9,8 @@
     padding-right: 3vw;
     height: 100px;
     width: 97vw;
-    background-image: url('https://i.pinimg.com/originals/86/45/ac/8645acebc576b61ebd325320b4c03c40.gif');
-    z-index: 2;
+    background-color: slateblue;
+    z-index: 3;
 }
 
 .NavBar img{

@@ -2,7 +2,9 @@ import logo from '../../logo.svg';
 
 function Logo(){
     return(
-        <img src={logo} className="App-logo" alt="logo"/>
+        <a href='/'>
+            <img src={logo} className="App-logo" alt="logo"/>
+        </a>
     )
 }
 export default Logo;
