@@ -30,6 +30,7 @@ function App(){
               <Route path="/Contact" component={Contact} />
             </Switch>
           </Router>
+          <Portfolio/>
     </div>
   </div>
   );
