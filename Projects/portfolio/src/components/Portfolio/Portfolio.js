@@ -14,7 +14,7 @@ class Portfolio extends Component{
     handleInputChange = (e) => {
         this.setState({filter: e.target.innerText})
         console.log(this.state)
-        console.log(event.target.innerText)
+        console.log(Event.target.innerText)
     }
 
     createCards = () => {

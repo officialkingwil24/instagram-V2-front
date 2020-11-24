@@ -30,7 +30,13 @@ function App(){
               <Route path="/Contact" component={Contact} />
             </Switch>
           </Router>
+          <AboutMe/>
+          <Skills/>
+          <Education/>
           <Portfolio/>
+          <Resume/>
+          <Links/>
+          <Contact/>
     </div>
   </div>
   );

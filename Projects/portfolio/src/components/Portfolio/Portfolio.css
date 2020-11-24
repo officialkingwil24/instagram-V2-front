@@ -50,6 +50,13 @@
     flex-wrap: wrap;
 }
 
+.technologies li{
+    border: 1px solid black;
+    margin: 3px;
+    background-color: rgb(56, 56, 56);
+    padding: 3px;
+}
+
 .bar{
     display: block;
     position: absolute;

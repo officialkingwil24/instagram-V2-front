@@ -1,7 +1,7 @@
 .App{
   text-align: center;
   background-color: azure;
-  min-height: 500px;
+  min-height: 800px;
   color: aliceblue;
   height: 100vh;
 }
@@ -47,6 +47,7 @@
 }
 
 .link:hover{
+  cursor: pointer;
   color: thistle;
 }
 
@@ -64,20 +65,18 @@
 }
 
 .homeBackground{
-  background-image: url('https://lh3.googleusercontent.com/proxy/2zLemouoKwU_kdAaQS7k5RkL8Y91IknuxHy8JQI9QEa1vdOxtw6Fjw_m_GFidceWsyH-SViKbFyEvfOyfLQUIEqIqKyGrA');
-  height: 100vh;
-  width: 100vw;
+  background-image: url(https://lh3.googleusercontent.com/proxy/2zLemouoKwU_kdAaQS7k5RkL8Y91IknuxHy8JQI9QEa1vdOxtw6Fjw_m_GFidceWsyH-SViKbFyEvfOyfLQUIEqIqKyGrA);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   z-index: 0;
   position: absolute;
 }
 
 .overlay{
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: 1;
   position: absolute;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
-  );
+  background-color: rgba(0, 0, 0, .5);
 }
