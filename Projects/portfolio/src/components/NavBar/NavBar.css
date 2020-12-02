@@ -23,3 +23,15 @@
 .NavBar a{
     margin-right: 20px;
 }
+
+.link{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.link:hover{
+    color: crimson;
+    cursor: pointer;
+    transition: color .40s ease;
+}

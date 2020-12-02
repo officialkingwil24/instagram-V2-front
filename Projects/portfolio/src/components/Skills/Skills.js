@@ -10,36 +10,54 @@ class Skills extends Component{
         this.handleInputChange = this.handleInputChange.bind(this)
     }
 
-    handleInputChange = (e) => {
-        this.setState({filter: e.target.innerText})
-        console.log(this.state)
-        console.log(Event.target.innerText)
+    handleInputChange = (event) => {
+        this.setState({filter: event.target.innerText})
     }
 
     createCards = () => {
         const allProjects = [
             {
-            url: 'https://videosync.co/',
+            url: 'https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif',
             title: 'VideoSync',
             desc: 'VideoSync can sync your music like bluetooth!',
             tech: ['React', 'HTML', 'CSS', 'JavaScript', 'Firebase', 'FullStack', 'All Projects'],
             img: 'https://toggl.com/blog/wp-content/uploads/2018/08/memorization-techniques.jpg'
+            },
+            {
+                url: 'https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif',
+                title: 'VideoSync',
+                desc: 'VideoSync can sync your music like bluetooth!',
+                tech: ['React', 'HTML', 'CSS', 'JavaScript', 'Firebase', 'FullStack', 'All Projects'],
+                img: 'https://toggl.com/blog/wp-content/uploads/2018/08/memorization-techniques.jpg'
+            },
+            {
+                url: 'https://i.pinimg.com/originals/81/26/7d/81267dec1d4578c4a954894cf7609415.gif',
+                title: 'VideoSync',
+                desc: 'VideoSync can sync your music like bluetooth!',
+                tech: ['React', 'HTML', 'CSS', 'JavaScript', 'Firebase', 'FullStack', 'All Projects'],
+                img: 'https://toggl.com/blog/wp-content/uploads/2018/08/memorization-techniques.jpg'
             }
         ];
         return( 
             allProjects // all projects to be filtered and put on the website
-            .filter((project) => {return project.tech // filter projects based on the tech
-            .includes(this.state.filter)}) // specifically look for the tech saved to state
-            .map((project, index) => { // now that we have filtered out some projects rendar them to the page
+            .map((projects, index) => { // now that we have filtered out some projects rendar them to the page
               return( // build the html by using dynamic properties
-                <div key={index} className="projectCard" style={{backgroundImage:`url(${project.img || this.state.backgroundImage})`}}>
-                    <div className='bar'>{project.title}</div>
-                    <div className='projectOverlay'>
-                        <img className='projectImage' alt={project.img} src={project.img} />
-                        <p className='cardDesc'>{project.desc}</p>
-                        <div className='technologies'><ul>{project.tech.map((tech, index) =>{return tech !== 'All Projects' ? <li key={index} value={tech} onClick={this.handleInputChange}>{tech}</li>: ''})}</ul>
-                        </div>
+                <div
+                    key={index}
+                    className={!projects.tech.includes(this.state.filter) ? 'projectCard shrink' : 'projectCard grow'}
+                    style={{backgroundImage:`url(${projects.img || this.state.backgroundImage})`}}>
+                    
+                    <a href={projects.url} className='projectsLink'>
+
+                    <div className='bar'>{projects.title}</div>
+
+                        <img className='projectImage' alt={projects.title} src={projects.img} />
+                        <p className='cardDesc'>{projects.desc}</p>
+                        <div className='technologies'><ul>{projects.tech.map((tech, index) => {
+                            return tech !== 'All Projects' ? <li key={index} value={tech} onClick={this.handleInputChange}>{tech}</li>: ''
+                            })}</ul>
                     </div>
+                    </a>
                 </div>
             )
         })
@@ -49,21 +67,23 @@ class Skills extends Component{
     render(){
         return(
           <div className="Skills" name="Skills">
-              <h1 className="selectionHead">Skills</h1>
+              <h1 className="selectionHead">Web Developer Skills</h1>
               <ul className="filter">
-                  <li>React</li>
-                  <div></div>
-                  <li>HTML</li>
-                  <div></div>
-                  <li>JavaScript</li>
-                  <div></div>
-                  <li>Firebase</li>
-                  <div></div>
-                  <li>FullStack</li>
-                  <div></div>
+                  <li onClick={this.handleInputChange}>React</li>
+                  <div>|</div>
+                  <li onClick={this.handleInputChange}>HTML</li>
+                  <div>|</div>
+                  <li onClick={this.handleInputChange}>JavaScript</li>
+                  <div>|</div>
+                  <li onClick={this.handleInputChange}>Firebase</li>
+                  <div>|</div>
+                  <li onClick={this.handleInputChange}>FullStack</li>
               </ul>
+              <h3>Improving On My Abilities</h3>
+              <div className="projects">
               {this.createCards()}
             </div>
+        </div>
         )
     }
 }

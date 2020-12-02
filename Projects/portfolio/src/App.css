@@ -1,9 +1,9 @@
 .App{
   text-align: center;
-  background-color: azure;
   min-height: 800px;
-  color: aliceblue;
+  color: black;
   height: 100vh;
+  padding-top: -100px;
 }
 
 .App-logo{
@@ -25,20 +25,13 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: honeydew;
+  color: black;
 }
 
 .App-link{
   color: skyblue;
-}
-
-@keyframes App-logo-spin{
-  from{
-      transform: rotate(0deg);
-  }
-  to{
-      transform: rotate(360deg);
-  }
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 .link{
@@ -61,11 +54,11 @@
   max-width: 1600px;
   position: relative;
   z-index: 1;
-  height: 100%;
+  padding-top: 100px;
 }
 
 .homeBackground{
-  background-image: url(https://lh3.googleusercontent.com/proxy/2zLemouoKwU_kdAaQS7k5RkL8Y91IknuxHy8JQI9QEa1vdOxtw6Fjw_m_GFidceWsyH-SViKbFyEvfOyfLQUIEqIqKyGrA);
+  background-image: url('https://lh3.googleusercontent.com/proxy/2zLemouoKwU_kdAaQS7k5RkL8Y91IknuxHy8JQI9QEa1vdOxtw6Fjw_m_GFidceWsyH-SViKbFyEvfOyfLQUIEqIqKyGrA');
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -76,7 +69,18 @@
 .overlay{
   height: 100%;
   width: 100%;
+  padding: 0 20px;
   z-index: 1;
+  top: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, .5);
+}
+
+@keyframes App-logo-spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }

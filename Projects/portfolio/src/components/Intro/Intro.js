@@ -4,17 +4,17 @@ class Intro extends Component{
     constructor(props){
         super(props);
         this.state = {
-            user: '_____'
+            user: '_______'
         }
     }
 
     handleInputChange = (e) => {
-        console.log(e.target.id);
+        console.log(e.target);
         let value = e.taget.value;
         this.setState({futureName: value})
     }
 
-    updateUser = (e) => {
+    updateUser = () => {
         this.setState({user: this.state.futureName})
     }
 
