@@ -1,4 +1,4 @@
-.aboutme{
+.About{
     background-color: silver;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     align-items: center;
     top: 0px;
     color: slateblue;
-    font-size: 1.5em;
+    font-size: 1em;
     z-index: 1;
     margin: 0px;
 }

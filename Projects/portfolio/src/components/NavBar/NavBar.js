@@ -1,5 +1,5 @@
 import Logo from '../Logo/Logo';
-import './NavBar.css'
+import './NavBar.css';
 import {Link} from 'react-scroll';
 
 function NavBar(){
@@ -7,7 +7,7 @@ function NavBar(){
         <div className="NavBar">
             <Logo/>
             <div>
-                <Link className='link' to='AboutMe' smooth={true}>About Me</Link>
+                <Link className='link' to='About' smooth={true}>About</Link>
                 <Link className='link' to='Skills' smooth={true}>Skills</Link>
                 <Link className='link' to='Education' smooth={true}>Education</Link>
                 <Link className='link' to='Portfolio' smooth={true}>Portfolio</Link>

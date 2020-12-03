@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import LandingPage from './components/LandingPage/LandingPage';
-import AboutMe from './components/About Me/AboutMe';
+import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education'
 import Portfolio from './components/Portfolio/Portfolio';
@@ -19,7 +19,7 @@ function App(){
         <div className="container">
         
           <LandingPage/>
-          <AboutMe/>
+          <About/>
           <Skills/>
           <Education/>
           <Portfolio/>

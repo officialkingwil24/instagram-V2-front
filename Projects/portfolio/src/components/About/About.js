@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './AboutMe.css'
+import './About.css'
 
-class AboutMe extends Component {
+class About extends Component {
     constructor(props){
         super(props);
         this.state = {};
@@ -9,9 +9,8 @@ class AboutMe extends Component {
 
 
     render(){
-
         return(
-            <div className= 'aboutme'>
+            <div className= 'About'>
              <h1> I'm Wilson Pierre Louis, a Software enginner based in New York.
                  </h1>
                     <h2>Here are a few I've been working with recently:
@@ -25,10 +24,8 @@ class AboutMe extends Component {
                         <li>API</li>
                     </ul> 
                 </h2>
-             
             </div>
-        
         )
     }
 }
-export default AboutMe;
+export default About;
